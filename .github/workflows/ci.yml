@@ -8,7 +8,7 @@ on:
         description: "skip or run job"
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
     if: ${{ github.event.inputs.runjob }}
     steps:
       - run: echo "run job 1"
